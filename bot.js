@@ -95,6 +95,42 @@ bot.on('message', msg => {
                     msg.channel.send(text[2]);
                 }
                 break;
+            case "site_4":
+                msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
+                if (typeof text[3] === "object") {
+                    for (let item of text[3]) {
+                        msg.channel.send(item);
+                    }
+                } else if (typeof text === "string") {
+                    msg.channel.send(text);
+                } else {
+                    msg.channel.send(text[3]);
+                }
+                break;
+            case "site_5":
+                msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
+                if (typeof text[4] === "object") {
+                    for (let item of text[4]) {
+                        msg.channel.send(item);
+                    }
+                } else if (typeof text === "string") {
+                    msg.channel.send(text);
+                } else {
+                    msg.channel.send(text[4]);
+                }
+                break;
+            case "site_6":
+                msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
+                if (typeof text[5] === "object") {
+                    for (let item of text[5]) {
+                        msg.channel.send(item);
+                    }
+                } else if (typeof text === "string") {
+                    msg.channel.send(text);
+                } else {
+                    msg.channel.send(text[5]);
+                }
+                break;
             // case "game":
             //     msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
             //     if (typeof text === "object") {
