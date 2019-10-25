@@ -57,7 +57,7 @@ bot.on('message', msg => {
                 msg.reply('pong');
                 break;
             case "help":
-                msg.reply('你可以使用如下指令：\n站点一：`!site_1`\n站点二：`!site_2`\n站点三：`!site_3`\n');
+                msg.reply('你可以使用如下指令：\n站点一：`!site_1`\n站点二：`!site_2`\n站点三：`!site_3`\n站点四：`!site_4`\n站点五：`!site_5`\n站点六：`!site_6`\n');
                 break;
             case "site_1":
                 msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
@@ -131,6 +131,9 @@ bot.on('message', msg => {
                     msg.channel.send(text[5]);
                 }
                 break;
+            // case "help":
+            //     msg.channel.send("指令如下\n站点一：`!site_1`\n站点二：`!site_2`\n站点三：`!site_3`\n站点四：`!site_4`\n站点五：`!site_5`\n站点六：`!site_6`\n");
+            //     break;
             // case "game":
             //     msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
             //     if (typeof text === "object") {
