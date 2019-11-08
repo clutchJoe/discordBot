@@ -5,7 +5,7 @@ require("dotenv").config();
 
 const rule = new schedule.RecurrenceRule();
 rule.second = 0;
-rule.minute = [0, 30];
+rule.minute = [2, 32];
 let text = "";
 
 const fetchData = async function () {
@@ -57,7 +57,7 @@ bot.on('message', msg => {
                 msg.reply('pong');
                 break;
             case "help":
-                msg.reply('你可以使用如下指令：\n站点一：`!site_1`\n站点二：`!site_2`\n站点三：`!site_3`\n站点四：`!site_4`\n站点五：`!site_5`\n站点六：`!site_6`\n');
+                msg.reply('你可以使用如下指令：\n站点一：`!site_1`\n站点二：`!site_2`\n站点三：`!site_3`\n站点四：`!site_4`\n站点五：`!site_5`\n站点六：`!site_6`\n站点七：`!site_7`\n站点八：`!site_8`\n站点九：`!site_9`\n');
                 break;
             case "site_1":
                 msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
@@ -129,6 +129,42 @@ bot.on('message', msg => {
                     msg.channel.send(text);
                 } else {
                     msg.channel.send(text[5]);
+                }
+                break;
+            case "site_7":
+                msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
+                if (typeof text[6] === "object") {
+                    for (let item of text[6]) {
+                        msg.channel.send(item);
+                    }
+                } else if (typeof text === "string") {
+                    msg.channel.send(text);
+                } else {
+                    msg.channel.send(text[6]);
+                }
+                break;
+            case "site_8":
+                msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
+                if (typeof text[7] === "object") {
+                    for (let item of text[7]) {
+                        msg.channel.send(item);
+                    }
+                } else if (typeof text === "string") {
+                    msg.channel.send(text);
+                } else {
+                    msg.channel.send(text[7]);
+                }
+                break;
+            case "site_9":
+                msg.channel.send("请收下你的直播链接，括号后为最后更新时间（美国时间），enjoy it ~\n\n");
+                if (typeof text[8] === "object") {
+                    for (let item of text[8]) {
+                        msg.channel.send(item);
+                    }
+                } else if (typeof text === "string") {
+                    msg.channel.send(text);
+                } else {
+                    msg.channel.send(text[8]);
                 }
                 break;
             // case "help":
